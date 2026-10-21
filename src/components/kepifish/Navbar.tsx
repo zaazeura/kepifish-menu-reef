@@ -39,7 +39,10 @@ export function Navbar() {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="text-sm font-semibold text-navy transition-colors hover:text-tangerine-deep"
+                className={cn(
+                  "text-sm font-semibold transition-colors hover:text-tangerine",
+                  scrolled ? "text-navy hover:text-tangerine-deep" : "text-cream/90",
+                )}
               >
                 {item.label}
               </a>
@@ -62,7 +65,10 @@ export function Navbar() {
           aria-label={open ? "Tutup menu navigasi" : "Buka menu navigasi"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="grid size-11 place-items-center rounded-full text-navy transition-colors hover:bg-cream-deep md:hidden"
+          className={cn(
+            "grid size-11 place-items-center rounded-full transition-colors",
+            scrolled || open ? "text-navy hover:bg-cream-deep" : "text-cream hover:bg-cream/10",
+          )}
         >
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
