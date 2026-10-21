@@ -97,6 +97,8 @@
   --tangerine: oklch(0.72 0.17 55);
   --tangerine-deep: oklch(0.63 0.16 48);
   --shell: oklch(0.83 0.06 74);
+  --whatsapp: oklch(0.78 0.17 156);
+  --whatsapp-foreground: oklch(1 0 0);
 }
 
 .dark {
