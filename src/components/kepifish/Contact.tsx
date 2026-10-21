@@ -6,7 +6,7 @@ import { Logo } from "@/components/kepifish/Logo";
 function ContactButton() {
   const link = waLink();
   const className =
-    "inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 font-bold text-white shadow-soft transition-all hover:-translate-y-0.5 hover:brightness-95";
+    "inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-3.5 font-bold text-whatsapp-foreground shadow-soft transition-all hover:-translate-y-0.5 hover:brightness-95";
   if (link) {
     return (
       <a href={link} target="_blank" rel="noopener noreferrer" className={className}>

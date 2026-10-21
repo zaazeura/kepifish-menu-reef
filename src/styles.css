@@ -46,6 +46,8 @@
   --color-tangerine: var(--tangerine);
   --color-tangerine-deep: var(--tangerine-deep);
   --color-shell: var(--shell);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-foreground: var(--whatsapp-foreground);
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --shadow-soft: 0 18px 45px -18px oklch(0.27 0.06 258 / 0.35);
