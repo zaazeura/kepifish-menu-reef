@@ -66,7 +66,7 @@ export function Navbar() {
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
           className={cn(
-            "grid size-11 place-items-center rounded-full transition-colors",
+            "grid size-11 place-items-center rounded-full transition-colors md:hidden",
             scrolled || open ? "text-navy hover:bg-cream-deep" : "text-cream hover:bg-cream/10",
           )}
         >
