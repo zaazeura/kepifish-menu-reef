@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/kepifish/Navbar";
 import { Hero } from "@/components/kepifish/Hero";
 import { MenuCatalog } from "@/components/kepifish/MenuCatalog";
+import { CatalogGallery } from "@/components/kepifish/CatalogGallery";
 import { About } from "@/components/kepifish/About";
 import { Contact } from "@/components/kepifish/Contact";
 import { QrSection } from "@/components/kepifish/QrSection";
@@ -36,6 +37,7 @@ function Index() {
       <main>
         <Hero />
         <MenuCatalog />
+        <CatalogGallery />
         <About />
         <Contact />
         <QrSection />

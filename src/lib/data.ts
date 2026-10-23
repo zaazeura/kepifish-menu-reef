@@ -5,6 +5,10 @@
 
 import menuKepiting from "@/assets/menu-kepiting.jpg";
 import menuNasiCokot from "@/assets/menu-nasi-cokot.jpg";
+import logoAsset from "@/assets/kepifish-logo.jpg.asset.json";
+import katalogDaftarMenu from "@/assets/katalog-daftar-menu.jpg.asset.json";
+import katalogKepiting from "@/assets/katalog-kepiting.png.asset.json";
+import katalogNasiCokot from "@/assets/katalog-nasi-cokot.png.asset.json";
 
 export const TAGLINE = "Sea-riously Good.";
 
@@ -45,18 +49,31 @@ export const MENU: MenuItem[] = [
     id: "kepiting-kuah-santan",
     name: "Kepiting Kuah Santan",
     description:
-      "Nikmati sajian kepiting dengan kuah santan gurih yang kaya cita rasa.",
+      "Perpaduan gurihnya kepiting dengan kuah santan yang lezat, terasa semakin nikmat dengan rempah pilihan.",
     image: menuKepiting,
-    price: "Harga menyusul",
+    price: "Rp 35.000",
   },
   {
     id: "nasi-cokot",
     name: "Nasi Cokot",
     description:
-      "Deskripsi sementara — ganti dengan deskripsi asli Nasi Cokot Kepifish.",
+      "Nasi hangat dengan suwiran ikan dan kepiting, dipadukan dengan bumbu khas kelapa yang gurih dan nikmat.",
     image: menuNasiCokot,
-    price: "Harga menyusul",
+    price: "Rp 20.000",
   },
+];
+
+// ---- Logo asli (jangan digambar ulang / diubah warnanya) ----
+export const LOGO_URL = logoAsset.url;
+
+// ---- Katalog gambar (poster). Tambah/ganti/hapus item di sini kapan saja.
+//      Unggah gambar baru, lalu ganti `image` dengan URL-nya. ----
+export type CatalogImage = { id: string; title: string; image: string };
+
+export const CATALOG_IMAGES: CatalogImage[] = [
+  { id: "daftar-menu", title: "Daftar Menu Kepifish", image: katalogDaftarMenu.url },
+  { id: "kepiting", title: "Kepiting Kuah Santan", image: katalogKepiting.url },
+  { id: "nasi-cokot", title: "Nasi Cokot", image: katalogNasiCokot.url },
 ];
 
 // ---- Teks About Us (editable) ----

@@ -1,27 +1,16 @@
-import { Fish } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { LOGO_URL } from "@/lib/data";
 
-/**
- * Logo KEPIFISH.
- * Aset logo asli belum tersedia — ini placeholder wordmark sementara.
- * Ganti dengan <img src={logoAsset.url} /> dari pointer .asset.json
- * begitu logo asli diunggah. Jangan menggambar ulang logo asli.
- */
-export function Logo({ className, light = false }: { className?: string; light?: boolean }) {
+/** Logo asli KEPIFISH — ditampilkan apa adanya (tanpa diubah warna/bentuk). */
+export function Logo({ className }: { className?: string; light?: boolean }) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-2 font-display font-black tracking-tight",
-        light ? "text-cream" : "text-navy",
+        "inline-flex size-14 items-center justify-center overflow-hidden rounded-2xl bg-card shadow-soft ring-1 ring-border",
         className,
       )}
     >
-      <span className="grid size-9 place-items-center rounded-full bg-tangerine text-accent-foreground shadow-soft">
-        <Fish className="size-5" strokeWidth={2.2} />
-      </span>
-      <span className="text-xl leading-none">
-        KEPI<span className="text-tangerine">FISH</span>
-      </span>
+      <img src={LOGO_URL} alt="Logo Kepifish" className="size-full object-contain" />
     </span>
   );
 }
