@@ -1,8 +1,13 @@
-import { cn } from "@/lib/utils";
-import { LOGO_URL } from "@/lib/data";
 
-/** Logo asli KEPIFISH — ditampilkan apa adanya (tanpa diubah warna/bentuk). */
-export function Logo({ className }: { className?: string; light?: boolean }) {
+import { cn } from "@/lib/utils";
+import logo from "@/assets/kepifish-logo-transparent.png";
+
+export function Logo({
+  className,
+}: {
+  className?: string;
+  light?: boolean;
+}) {
   return (
     <span
       className={cn(
@@ -10,14 +15,23 @@ export function Logo({ className }: { className?: string; light?: boolean }) {
         className,
       )}
     >
-      <img src={LOGO_URL} alt="Logo Kepifish" className="size-full object-contain" />
+      <img
+        src={logo}
+        alt="Kepifish Logo"
+        className="size-full object-contain"
+      />
     </span>
   );
 }
 
 export function Tagline({ className }: { className?: string }) {
   return (
-    <p className={cn("font-display text-sm font-semibold italic tracking-wide text-tangerine-deep", className)}>
+    <p
+      className={cn(
+        "font-display text-sm font-semibold italic tracking-wide text-tangerine-deep",
+        className,
+      )}
+    >
       Sea-riously Good.
     </p>
   );
