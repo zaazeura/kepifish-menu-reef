@@ -1,0 +1,3 @@
+- [ ] Add database-backed customer reviews with public submission and admin moderation.
+- [ ] Confirm existing WhatsApp and Instagram links use the existing editable settings; do not invent account details.
+- [ ] Fix any existing route/build errors that block these features and verify the public and moderation flows.
