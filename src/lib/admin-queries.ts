@@ -153,5 +153,5 @@ export function useAdminStatus(): AdminStatus {
     },
     staleTime: 5 * 60_000,
   });
-  return data ?? { ready: false, userId: null, isAdmin: false, username: null, displayName: null };
+  return data ? { ...data, ready: true } : { ready: false, userId: null, isAdmin: false, username: null, displayName: null };
 }

@@ -88,11 +88,11 @@ export function latestUnitPrice(
   const inPeriod = purchasesInPeriod(purchases, from, to)
     .filter((p) => matchIngredient(p, ingredientName, unit))
     .sort((a, b) => b.purchased_at.localeCompare(a.purchased_at));
-  if (inPeriod.length > 0) return inPeriod[0].unit_price;
+  if (inPeriod.length > 0) return inPeriod[0]!.unit_price;
   const anyTime = purchases
     .filter((p) => matchIngredient(p, ingredientName, unit))
     .sort((a, b) => b.purchased_at.localeCompare(a.purchased_at));
-  return anyTime.length > 0 ? anyTime[0].unit_price : null;
+  return anyTime.length > 0 ? anyTime[0]!.unit_price : null;
 }
 
 /**
