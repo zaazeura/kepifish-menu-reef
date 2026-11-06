@@ -24,14 +24,14 @@ export const CATALOG_URL_PLACEHOLDER = "https://ganti-dengan-url-website-kepifis
 export const CONTACT = {
   /** Nomor WhatsApp pemilik, format internasional tanpa "+" dan tanpa spasi.
    *  Contoh: "6281234567890" (62 untuk Indonesia). Kosong = tombol belum aktif. */
-  whatsappNumber: "",
+  whatsappNumber: "628219710724",
   whatsappMessage: "Halo Kepifish, saya ingin memesan menu",
   /** Username Instagram tanpa "@". Kosong = tautan belum aktif. */
-  instagramUsername: "",
+  instagramUsername: "kepifish_",
   /** Alamat usaha. Kosong = placeholder tampil di website. */
-  address: "",
+  address: "balikpapan, kalimantan timur",
   /** Jam operasional. Kosong = placeholder tampil di website. */
-  hours: "",
+  hours: "Senin - Minggu, 10:00 - 21:00",
 } as const;
 
 // ---- Menu: tepat dua produk sesuai katalog resmi ----
